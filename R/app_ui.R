@@ -9,8 +9,20 @@ app_ui <- function(request) {
     # Leave this function for adding external resources
     golem_add_external_resources(),
     # List the first level UI elements here 
-    fluidPage(
-      h1("SkeletonShinyDashboardLogin")
+    #gfonts::use_font(id = "playfair-display",css_path = 'inst/app/www/playfair_regular.css',selector = "logo"),
+    shinydashboard::dashboardPage(skin="blue",
+                                  
+          header = shinydashboard::dashboardHeader(title = "EXAMPLE"),
+                                  
+          sidebar = shinydashboard::dashboardSidebar(mod_sidebar_ui("sidebar_ui_1"),collapsed = FALSE),
+                                  
+          body = shinydashboard::dashboardBody(
+                mod_login_ui("login_ui_1"),
+                shinydashboard::tabItems(
+                     shinydashboard::tabItem(tabName = "firts_tab"),
+                      shinydashboard::tabItem(tabName = "second_tab")
+                )
+        )
     )
   )
 }

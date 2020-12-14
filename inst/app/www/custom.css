@@ -1,0 +1,52 @@
+
+.skin-blue .main-header .navbar {
+  background-color: #fff;
+}
+
+/* logo */
+.skin-blue .main-header .logo {
+  background-color: #fff;
+  color: #e73509;
+}
+
+/* logo when hovered */
+.skin-blue .main-header .logo:hover {
+background-color: #fff;
+}
+
+
+/* sidebar backround, font color when hovered, font size */
+  .skin-blue .left-side, .skin-blue .main-sidebar, .skin-blue .wrapper {
+    background-color: #09bbe7;
+      color: #fff;
+      font-size: 16px;
+  }
+
+
+
+/* sidebar font color when not hovered */
+.skin-blue .sidebar a {
+    color: #e73509;
+}
+
+.skin-blue .sidebar-menu>li.active>a, .skin-blue .sidebar-menu>li:hover>a {
+    background: #e73509;
+    border-left-color: #e73509;
+}
+
+/* toggle button no hover */ 
+  .skin-blue .main-header .navbar .sidebar-toggle {
+    color: #e73509;
+  }
+  
+/* toggle button when hovered  */                    
+.skin-blue .main-header .navbar .sidebar-toggle:hover{
+background-color: #e73509;
+}
+
+/* body backround color */
+.content-wrapper, .right-side {
+  background-color: #fff;
+  color: #e73509;
+}
+
