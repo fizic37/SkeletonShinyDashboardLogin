@@ -15,12 +15,12 @@
 ## Add meta data about your application
 golem::fill_desc(
   pkg_name = "SkeletonShinyDashboardLogin", # The Name of the package containing the App 
-  pkg_title = "PKG_TITLE", # The Title of the package containing the App 
+  pkg_title = "Skeleton with login", # The Title of the package containing the App 
   pkg_description = "PKG_DESC.", # The Description of the package containing the App 
-  author_first_name = "AUTHOR_FIRST", # Your First Name
-  author_last_name = "AUTHOR_LAST", # Your Last Name
-  author_email = "AUTHOR@MAIL.COM", # Your Email
-  repo_url = NULL # The URL of the GitHub Repo (optional) 
+  author_first_name = "Marius", # Your First Name
+  author_last_name = "Tita", # Your Last Name
+  author_email = "marius.tita@fngcimm.ro", # Your Email
+  # The URL of the GitHub Repo (optional) 
 )     
 
 ## Set {golem} options ----
@@ -28,16 +28,17 @@ golem::set_golem_options()
 
 ## Create Common Files ----
 ## See ?usethis for more information
-usethis::use_mit_license( name = "Golem User" )  # You can set another license here
+usethis::use_mit_license( name = "Marius Tita" )  # You can set another license here
 usethis::use_readme_rmd( open = FALSE )
 usethis::use_code_of_conduct()
 usethis::use_lifecycle_badge( "Experimental" )
 usethis::use_news_md( open = FALSE )
 
 ## Use git ----
-usethis::use_git()
+usethis::use_github_links(overwrite = TRUE)
+usethis::use_github(credentials = git2r::cred_ssh_key(passphrase = "shumi"))
 
-## Init Testing Infrastructure ----
+1## Init Testing Infrastructure ----
 ## Create a template for tests
 golem::use_recommended_tests()
 
