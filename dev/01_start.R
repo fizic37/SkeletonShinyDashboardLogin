@@ -35,7 +35,7 @@ usethis::use_lifecycle_badge( "Experimental" )
 usethis::use_news_md( open = FALSE )
 
 ## Use git ----
-usethis::use_github_links(overwrite = TRUE)
+#usethis::use_github_links(overwrite = TRUE)
 usethis::use_github(credentials = git2r::cred_ssh_key(passphrase = "shumi"))
 
 1## Init Testing Infrastructure ----
