@@ -1,5 +1,1 @@
----
-output: github_document
----
 
-# This is just a shinydashboard example application with login, few modules and a little bit of css
