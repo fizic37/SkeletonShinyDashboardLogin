@@ -19,8 +19,8 @@ app_ui <- function(request) {
           body = shinydashboard::dashboardBody(
                 mod_login_ui("login_ui_1"),
                 shinydashboard::tabItems(
-                     shinydashboard::tabItem(tabName = "firts_tab"),
-                      shinydashboard::tabItem(tabName = "second_tab")
+                     shinydashboard::tabItem(tabName = "first_tab",mod_first_tab_ui("first_tab_ui_1")),
+                      shinydashboard::tabItem(tabName = "second_tab",mod_second_tab_ui("second_tab_ui_1"))
                 )
         )
     )

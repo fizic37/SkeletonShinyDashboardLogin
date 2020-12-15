@@ -20,14 +20,14 @@ app_server <- function( input, output, session ) {
   
   observeEvent(vals$sidebar_selected,{
     
-    if (sum("home" == vals$sidebar_selected)==1) {
-      callModule(mod_home_server, "home_ui_1",vals)
-      vals$sidebar_selected <- c(vals$sidebar_selected,"home")
+    if (sum("first_tab" == vals$sidebar_selected)==1) {
+      callModule(mod_first_tab_server, "first_tab_ui_1")
+      vals$sidebar_selected <- c(vals$sidebar_selected,"first_tab")
     }
     
-    if (sum("solduri" == vals$sidebar_selected)==1) {
-      callModule(mod_portofoliu_server, "portofoliu_ui_1")
-      vals$sidebar_selected <- c(vals$sidebar_selected,"solduri")
+    if (sum("second_tab" == vals$sidebar_selected)==1) {
+      callModule(mod_second_tab_server, "second_tab_ui_1")
+      vals$sidebar_selected <- c(vals$sidebar_selected,"second_tab")
     }  # this speeds up the process
     
   })

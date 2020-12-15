@@ -20,7 +20,9 @@ usethis::use_package( "thinkr" )
 ## Add modules ----
 ## Create a module infrastructure in R/
 golem::add_module( name = "login" ) # Name of the module
-golem::add_module( name = "sidebar" ) # Name of the module
+golem::add_module( name = "sidebar" )# Name of the module
+golem::add_module( name = "first_tab" )
+golem::add_module( name = "second_tab" )
 
 ## Add helper functions ----
 ## Creates ftc_* and utils_*
